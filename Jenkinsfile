@@ -10,4 +10,8 @@ node {
    stage('Notification') {
       echo "Notified to developer"
    }
+   stage('PostBuild') {
+	  //build job: 'devops-web-downstream', parameters: [string(name: 'server.port', value: '8090'), string(name: 'management.port', value: '8091')]
+      echo "Notified to developer"
+   }
 }
